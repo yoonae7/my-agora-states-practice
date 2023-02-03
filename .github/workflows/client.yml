@@ -22,7 +22,6 @@ jobs:
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws --version
-          aws-cli/2.7.24 Python/3.8.8 Linux/4.14.133-113.105.amzn2.x86_64 botocore/1.13
       - name: Sync Bucket
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
